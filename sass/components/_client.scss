@@ -1,0 +1,84 @@
+.clients__section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients__container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clients__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.clients__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  margin-bottom: 0px;
+  fill: currentColor;
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 170px;
+  height: 90px;
+  color: #afb1b8;
+  fill: currentColor;
+  transition: border $time $cubic, fill $time $cubic;
+}
+
+.clients__item:last-child {
+  margin-right: 0;
+}
+
+.clients__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  color: $clients;
+  border-radius: 4px;
+  margin-left: 0;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.clients__link:hover,
+.clients__link:focus {
+  fill: $blue-text;
+  border: 1px solid $blue-text;
+  border-radius: 4px;
+}
+
+.clients__link:active {
+  fill: transparent;
+}
+
+.clients__svg {
+  padding: 0;
+}
