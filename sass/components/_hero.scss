@@ -33,10 +33,10 @@
   margin-right: auto;
   margin-left: auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
+  font-size: $FontSize44;
+  line-height: $LineHeight60;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: $LetterSpacing06;
   text-transform: uppercase;
   color: $white-text;
   width: 696px;
@@ -48,8 +48,8 @@
   background-color: $blue-text;
   color: $white-text;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: $FontSize16;
+  line-height: $LineHeight30;
   padding: 10px 32px;
   border-radius: 4px;
   min-width: 200px;

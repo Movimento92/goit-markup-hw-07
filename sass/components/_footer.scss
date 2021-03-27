@@ -18,8 +18,8 @@
 .footer__logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
+  font-size: $FontSize26;
+  line-height: $LineHeight31;
   color: $white-text;
   margin-bottom: 20px;
 }
@@ -33,9 +33,9 @@
   padding: 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  font-size: $FontSize14;
+  line-height: $LineHeight24;
+  letter-spacing: $LetterSpacing03;
   color: $white-text;
   text-align: left;
   margin-bottom: 9px;
@@ -50,9 +50,9 @@
 .footer__contacts {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  font-size: $FontSize14;
+  line-height: $LineHeight24;
+  letter-spacing: $LetterSpacing03;
   color: $grey-text-op60;
 }
 
@@ -68,9 +68,9 @@
   margin: 0;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  font-size: $FontSize14;
+  line-height: $LineHeight16;
+  letter-spacing: $LetterSpacing03;
   text-transform: uppercase;
   color: $white-text;
   margin-bottom: 20px;
@@ -123,12 +123,12 @@
 .footer__form--text {
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: $FontSize16;
+  line-height: $LineHeight30;
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: $LetterSpacing06;
   color: $white-text;
   margin-right: 10px;
 }
@@ -136,9 +136,9 @@
 .footer__info--connect {
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  font-size: $FontSize14;
+  line-height: $LineHeight16;
+  letter-spacing: $LetterSpacing03;
   text-transform: uppercase;
   color: $white-text;
   margin-left: 93px;
@@ -156,20 +156,25 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
   transition-property: backgraund-color;
   transition-duration: $time;
   transition-timing-function: $cubic;
+
+  &:focus,
+  &:hover {
+    border: 1px solid $blue-text;
+    border-radius: 4px;
+  }
 }
 
 .footer__form--input {
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: $FontSize16;
+  line-height: $LineHeight20;
   display: flex;
   align-items: center;
-  letter-spacing: 0.03em;
+  letter-spacing: $LetterSpacing03;
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -184,19 +189,13 @@
   transition-property: backgraund-color;
   transition-duration: $time;
   transition-timing-function: $cubic;
-}
 
-.footer__form--input:focus-within,
-.footer__form--input:hover,
-.footer__form--input:active {
-  border: 1px solid $blue-text;
-  border-radius: 4px;
-}
-
-.footer__form--button:focus,
-.footer__form--button:hover {
-  border: 1px solid $blue-text;
-  border-radius: 4px;
+  &:focus-within,
+  &:hover,
+  &:active {
+    border: 1px solid $blue-text;
+    border-radius: 4px;
+  }
 }
 
 .footer__form--icon {

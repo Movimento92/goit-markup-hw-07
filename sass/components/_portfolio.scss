@@ -18,14 +18,15 @@
   padding: 0;
   text-align: center;
   justify-content: center;
+  display: flex;
 }
 
 .filters__list button {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: $FontSize16;
+  line-height: $LineHeight26;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: $LetterSpacing03;
   color: $black-text;
   background-color: $back-white-gray;
   border-radius: 4px;
@@ -66,31 +67,31 @@
   position: relative;
   margin: 0;
   width: 370px;
-}
 
-.portfolio__tumb {
-  position: relative;
-  width: 368px;
-  height: 294px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: $hover-overlay;
-  overflow: hidden;
-}
+  &:nth-child(-n + 6) {
+    margin-bottom: 30px;
+  }
 
-.project__item:nth-child(3n + 2) {
-  margin-left: 30px;
-  margin-right: 30px;
-}
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 
-.project__item:nth-child(-n + 6) {
-  margin-bottom: 30px;
-}
+  &:nth-child(3n + 2) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 
-.project__item:hover,
-.project__item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  .portfolio__tumb {
+    position: relative;
+    width: 368px;
+    height: 294px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $hover-overlay;
+    overflow: hidden;
+  }
 }
 
 .project__link:hover .portfolio__box,
@@ -116,9 +117,9 @@
 .portfolio__overlay {
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
+  font-size: $FontSize18;
+  line-height: $LineHeight28;
+  letter-spacing: $LetterSpacing03;
   color: $white-text;
   padding: 63px 24px;
 }
@@ -139,9 +140,9 @@
   padding: 0;
   width: 322px;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 36px;
-  letter-spacing: 0.06em;
+  font-size: $FontSize18;
+  line-height: $LineHeight36;
+  letter-spacing: $LetterSpacing06;
   color: $black-text;
   background-color: $white-text;
   text-align: left;
@@ -155,9 +156,9 @@
   padding: 0;
   width: 322px;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
+  font-size: $FontSize16;
+  line-height: $LineHeight30;
+  letter-spacing: $LetterSpacing03;
   color: $grey-text;
   background-color: $white-text;
   text-align: left;
